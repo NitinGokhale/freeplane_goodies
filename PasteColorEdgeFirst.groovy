@@ -14,11 +14,7 @@ def ec = node.style.getEdge().getColorCode();
 
 
 if (cc == ec) {
-  if (cc == bc) {
-    node.style.backgroundColorCode = "#ffffff";
-  } else {
-    node.style.backgroundColorCode = cc;
-  }
+  node.style.backgroundColorCode = cc;
 } else {
   if (cc != "#ffffff") {
     node.style.getEdge().setColorCode(cc);
